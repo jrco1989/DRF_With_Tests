@@ -1,0 +1,10 @@
+{% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.title }}
+            </div>
+            <h1>{{ post.title }}</h1>
+            <p>{{ post.text|linebreaksbr }}</p><!-- |llinebreaksbr reconoce los saltos de línea para convertir el texto en un párrafo-->
+            
+        </div>
+    {% endfor %}
